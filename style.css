@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Courier, monospace;
+    font-style: bold;
+    box-sizing: border-box;
+}
+body{
+    background-color: #040311ee;
+    overflow: hidden;
+}
+.circle1{
+    bottom: 50px;
+    right: 0px;
+    background-image: linear-gradient(to right, #B91372 10%, #6B0F1A 80%);
+    position: absolute;
+    width: 600px;
+    z-index: -1;
+    height: 700px;
+    border-radius: 30% 70% 70% 30% / 50% 62% 38% 50% ;
+}
+.circle2{
+    bottom: -180px;
+    left: -150px;
+    background-image: linear-gradient(to right, #A40606 10%, #D98324 80%);
+    position: absolute;
+    width: 600px;
+    z-index: -1;
+    height: 700px;
+    border-radius: 50% 50% 72% 28% / 50% 44% 56% 50%  ;
+}
+.searchContainer{
+    /* background-color: #004280; */
+    position: relative;
+    width: 100%;
+    height: 236px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    position: relative; 
+     width: 50%;
+    height: 54px;
+    border: 1px solid #000000;
+    padding: 10px 18px;
+    outline: none;
+    font-size: 1.1em;
+    font-weight: 100;
+    color: #ffffff;
+    border-radius: 4px;
+    background: #000000;
+    transition: 0.5s;
+}
+input:hover{
+    border: 1px solid #004280;
+}
+button{
+    position: relative;
+    background-color: transparent;
+    right: 60px;
+    color: #817f7f;
+    font-size: 2em;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    width: 60px;
+    height: 54px;
+    transition: 0.3s;
+    box-shadow:none;
+}
+button:hover{
+    background-color: #100f0f;
+}
+.outputContainer{
+    position: relative;
+    margin: 18px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    padding-left: 50px;
+    flex-wrap: wrap;
+    height: auto;
+}
+h1{
+    position: absolute;
+    font-weight: 400;
+    font-style: bold;
+    font-size: 40px ;
+    left: 36px;
+    z-index: 1;
+    top: 0;
+    padding: 16px;
+}
+img{
+    position: absolute;
+    width: 155px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 200%;
+    cursor: pointer;
+    opacity: 70%;
+}
+.outputCard{
+    cursor: pointer;
+    position: relative;
+    background: #0000007f;
+    overflow: hidden;
+    font-size: 24px;
+    font-weight: 400;
+    border: none;
+    padding: 14px 0  0 26px;
+    width: 260px;
+    border-radius: 4px;
+    margin: 0 64px 40px 0px;
+    height: 178px;   
+    color: #fff; 
+    border-top: 1px solid rgba(163, 163, 163, 0.5);
+    backdrop-filter: blur(10px);
+}
+.lable{
+    cursor: pointer;
+    text-align: left;
+    font-weight: 500;
+}
+.output{
+    position: absolute;
+    font-size: 114px;
+    right: 10px;
+    font-weight: 100;
+    margin: 2px 0 0px 0;
+    color: #ffffffae;
+    cursor: pointer;    
+}
+.robot20{
+    position: absolute;
+    top: 0px;
+    left: 656px;
+    width: 150px;
+    z-index: 1;
+    opacity: 200%;
+}
+@media screen and (max-width:600px) {
+    body{
+        background-color: #040311ee;
+        overflow: scroll;
+    }
+
+}
+
